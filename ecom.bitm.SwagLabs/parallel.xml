@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="SwagLabs Parallel Suite"
+       parallel="classes"
+       thread-count="3">
+
+    <test name="SwagLabs Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="ecom.bitm.SwagLabsLogin.LoginPageTest"/>
+            <class name="ecom.bitm.SwagLabsLogin.LoginPageNegative"/>
+
+            <class name="ecom.bitm.SwagLabsProduct.ProductTest"/>
+            <class name="ecom.bitm.SwagLabsProduct.ProductNegativeTest"/>
+
+            <class name="ecom.bitm.SwagLabsCart.CartpageTest"/>
+            <class name="ecom.bitm.SwagLabsCart.CartpageNegativeTest"/>
+
+            <class name="ecom.bitm.SwagLabsCheckOut.Checkoutpage"/>
+            <class name="ecom.bitm.SwagLabsCheckOut.CheckOutNegativeTest"/>
+
+            <class name="ecom.bitm.SwagLabsHamBurger.HamburgerTest"/>
+            <class name="ecom.bitm.SwagLabsHamBurger.HamburgerNegativeTest"/>
+        </classes>
+    </test>
+
+</suite>

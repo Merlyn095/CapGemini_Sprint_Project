@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="classes" name="Failed suite [SwagLabs Parallel Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="classes" name="SwagLabs Tests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="ecom.bitm.SwagLabsCheckOut.Checkoutpage">
+        <methods>
+          <include name="verifyLoginToCheckoutIntegration" invocation-numbers="0"/>
+          <include name="aT"/>
+          <include name="bS"/>
+          <include name="bC"/>
+          <include name="aM"/>
+          <include name="bT"/>
+          <include name="aS"/>
+          <include name="aC"/>
+          <include name="bM"/>
+        </methods>
+      </class> <!-- ecom.bitm.SwagLabsCheckOut.Checkoutpage -->
+      <class name="ecom.bitm.SwagLabsProduct.ProductTest">
+        <methods>
+          <include name="aT"/>
+          <include name="bC"/>
+          <include name="bS"/>
+          <include name="aM"/>
+          <include name="aC"/>
+          <include name="bT"/>
+          <include name="aS"/>
+          <include name="productToCheckout_Test" invocation-numbers="1"/>
+          <include name="bM"/>
+        </methods>
+      </class> <!-- ecom.bitm.SwagLabsProduct.ProductTest -->
+    </classes>
+  </test> <!-- SwagLabs Tests(failed) -->
+</suite> <!-- Failed suite [SwagLabs Parallel Suite] -->
