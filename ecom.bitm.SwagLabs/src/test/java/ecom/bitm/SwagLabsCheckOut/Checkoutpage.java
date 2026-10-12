@@ -78,6 +78,7 @@ public class Checkoutpage extends BaseClass {
         product.clickCart();
 
         SwagLabsCartpage cart = new SwagLabsCartpage(driver);
+        cart.getRemove();
         cart.clickCheckout();
 
         Assert.assertTrue(driver.getCurrentUrl().contains("checkout-step-one"),"Checkout page is not displayed");
