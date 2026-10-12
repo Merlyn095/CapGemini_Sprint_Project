@@ -3,7 +3,7 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="ecom.bitm.SwagLabsProduct.ProductTest">
+      <class name="ecom.bitm.SwagLabsCheckOut.Checkoutpage">
         <methods>
           <include name="aT"/>
           <include name="bC"/>
@@ -12,10 +12,10 @@
           <include name="aC"/>
           <include name="bT"/>
           <include name="aS"/>
-          <include name="productToCheckout_Test" invocation-numbers="1"/>
           <include name="bM"/>
+          <include name="verifyCheckoutSmoke" invocation-numbers="0"/>
         </methods>
-      </class> <!-- ecom.bitm.SwagLabsProduct.ProductTest -->
+      </class> <!-- ecom.bitm.SwagLabsCheckOut.Checkoutpage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

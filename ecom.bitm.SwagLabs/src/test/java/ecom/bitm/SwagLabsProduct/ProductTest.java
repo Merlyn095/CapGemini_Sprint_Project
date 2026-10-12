@@ -30,8 +30,7 @@ public class ProductTest extends BaseClass {
         SwagLabsProduct product = new SwagLabsProduct(driver);
         Assert.assertEquals(product.verifyProductsPage(), true,"Products page is not displayed");
         Reporter.log("Products page is displayed successfully", true);
-        SwagLabsHamburger hb=new SwagLabsHamburger(driver);
-	     hb.logout();
+        
     }
 
     @Test(dataProvider = "data", dataProviderClass = DataProviderUtility.class,groups = {"FT", "Pos"})
@@ -41,8 +40,8 @@ public class ProductTest extends BaseClass {
         SwagLabsProduct product = new SwagLabsProduct(driver);
         product.clickaddtocart();
         Reporter.log("Backpack added successfully", true);
-        SwagLabsHamburger hb=new SwagLabsHamburger(driver);
-	     hb.logout();
+        
+        
     }
     @Test(dataProvider = "data", dataProviderClass = DataProviderUtility.class,groups = {"Integration", "Pos"})
     public void productToCart(String Username,String Password) {
@@ -53,8 +52,7 @@ public class ProductTest extends BaseClass {
         product.clickCart();
         Assert.assertEquals(driver.getCurrentUrl().contains("cart"), true,"Cart page is not displayed");
         Reporter.log("Product successfully integrated with Cart", true);
-        SwagLabsHamburger hb=new SwagLabsHamburger(driver);
-	     hb.logout();
+        
         
     }
 
@@ -69,8 +67,7 @@ public class ProductTest extends BaseClass {
         cart.clickCheckout();
         Assert.assertEquals(driver.getCurrentUrl().contains("checkout-step-one"),true,"Checkout page is not displayed");
         Reporter.log("Product page successfully integrated with Checkout page", true);
-        SwagLabsHamburger hb=new SwagLabsHamburger(driver);
-	     hb.logout();
+       
         
     }
     
@@ -81,8 +78,7 @@ public class ProductTest extends BaseClass {
         SwagLabsProduct product = new SwagLabsProduct(driver);
         Assert.assertEquals(product.verifyProductsPage(), true,"Products page is not displayed");
         Reporter.log("Product page smoke test passed", true);
-        SwagLabsHamburger hb=new SwagLabsHamburger(driver);
-	     hb.logout();
+        
     }
 
     @Test(dataProvider = "data", dataProviderClass = DataProviderUtility.class,groups = {"Smoke", "Pos"})
@@ -93,8 +89,7 @@ public class ProductTest extends BaseClass {
         product.sortByNameAToZ();
         Assert.assertEquals(product.verifyProductsPage(), true,"Products page is not displayed");
         Reporter.log("Name A-Z sorting performed successfully", true);
-        SwagLabsHamburger hb=new SwagLabsHamburger(driver);
-	     hb.logout();
+        
     }
 
     @Test(dataProvider = "systemData", dataProviderClass = DataProviderUtility.class, groups = {"ST", "Pos"})
@@ -145,7 +140,6 @@ public class ProductTest extends BaseClass {
         );
 
         Reporter.log("Complete purchase system test passed", true);
-        SwagLabsHamburger hb=new SwagLabsHamburger(driver);
-	     hb.logout();
+        
     }
 }

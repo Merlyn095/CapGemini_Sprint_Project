@@ -42,7 +42,6 @@ public class ProductNegativeTest extends BaseClass {
         );
 
         Reporter.log( "Negative test passed: Product was not added without clicking Add to Cart",true);
-        SwagLabsHamburger hb=new SwagLabsHamburger(driver);
-	     hb.logout();
+        
     }
 }
