@@ -2,20 +2,21 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
     <classes>
-      <class name="ecom.bitm.SwagLabsCheckOut.Checkoutpage">
+      <class name="ecom.bitm.SwagLabsHamBurger.HamburgerTest">
         <methods>
-          <include name="aT"/>
           <include name="bC"/>
-          <include name="bS"/>
           <include name="aM"/>
+          <include name="verifyHamBurgerMenu" invocation-numbers="0 1 2"/>
           <include name="aC"/>
-          <include name="bT"/>
-          <include name="aS"/>
           <include name="bM"/>
-          <include name="verifyCheckoutSmoke" invocation-numbers="0"/>
         </methods>
-      </class> <!-- ecom.bitm.SwagLabsCheckOut.Checkoutpage -->
+      </class> <!-- ecom.bitm.SwagLabsHamBurger.HamburgerTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

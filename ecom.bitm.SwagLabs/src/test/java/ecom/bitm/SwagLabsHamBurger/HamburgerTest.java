@@ -32,10 +32,6 @@ public class HamburgerTest extends BaseClass {
 		Reporter.log("All Hamburger menu options are displayed successfully",true);
 		hb.clickCross();
 		
-	    
-
-		//hb.getLogout();
-		//Thread.sleep(2000);
 
 	}
 

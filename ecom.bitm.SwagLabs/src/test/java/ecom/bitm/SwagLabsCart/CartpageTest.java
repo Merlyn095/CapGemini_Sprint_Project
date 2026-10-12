@@ -37,17 +37,16 @@ public class CartpageTest extends BaseClass {
 	}
 
 	@Test(dataProvider = "data", dataProviderClass = DataProviderUtility.class,groups = {"FT", "Smoke"})
-	public void verifyAddProductToCart(String Username,String Password) {
+	public void verifyAddProductToCart(String Username,String Password) throws InterruptedException {
 		SwagLabsLogin ln=new SwagLabsLogin(driver);
 		ln.login(Username,Password);
 		SwagLabsProduct p=new SwagLabsProduct(driver);
 		SwagLabsCartpage cart=new SwagLabsCartpage(driver);
 		p.clickaddtocart();
 		p.clickCart();
-		Assert.assertTrue(
-		        cart.verifyBackpackDisplayed(),
-		        "Backpack is not displayed in Cart"
-		);		Reporter.log("Product is in  cart  Page",true);
+		Thread.sleep(2000);
+		Assert.assertTrue(cart.verifyBackpackDisplayed(),"Backpack is not displayed in Cart");	
+		Reporter.log("Product is in  cart  Page",true);
 		
 
 	}

@@ -14,7 +14,7 @@
       <![CDATA[Before Method]]>
     </line>
     <line>
-      <![CDATA[Smoke test passed: Checkout page opened]]>
+      <![CDATA[PASS: First Name,Last Name , ZipCode validation verified]]>
     </line>
     <line>
       <![CDATA[After Method]]>
@@ -32,32 +32,29 @@
       <![CDATA[Close - DataBase Connectivity]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-10-10T21:59:09 IST" name="Failed suite [Suite]" finished-at="2026-10-10T21:59:19 IST" duration-ms="9924">
+  <suite started-at="2026-10-12T15:08:35 IST" name="Default suite" finished-at="2026-10-12T15:08:42 IST" duration-ms="6479">
     <groups>
-      <group name="Pos">
-        <method signature="Checkoutpage.verifyCheckoutSmoke(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ecom.bitm.SwagLabsCheckOut.Checkoutpage@73a1e9a9]" name="verifyCheckoutSmoke" class="ecom.bitm.SwagLabsCheckOut.Checkoutpage"/>
-      </group> <!-- Pos -->
-      <group name="Smoke">
-        <method signature="Checkoutpage.verifyCheckoutSmoke(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ecom.bitm.SwagLabsCheckOut.Checkoutpage@73a1e9a9]" name="verifyCheckoutSmoke" class="ecom.bitm.SwagLabsCheckOut.Checkoutpage"/>
-      </group> <!-- Smoke -->
+      <group name="Negative">
+        <method signature="CheckOutNegativeTest.verifyCheckoutTextFieldFN(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ecom.bitm.SwagLabsCheckOut.CheckOutNegativeTest@3270d194]" name="verifyCheckoutTextFieldFN" class="ecom.bitm.SwagLabsCheckOut.CheckOutNegativeTest"/>
+      </group> <!-- Negative -->
     </groups>
-    <test started-at="2026-10-10T21:59:09 IST" name="Test(failed)" finished-at="2026-10-10T21:59:19 IST" duration-ms="9924">
-      <class name="ecom.bitm.SwagLabsCheckOut.Checkoutpage">
-        <test-method is-config="true" signature="bS()[pri:0, instance:ecom.bitm.SwagLabsCheckOut.Checkoutpage@73a1e9a9]" started-at="2026-10-10T21:59:09 IST" name="bS" finished-at="2026-10-10T21:59:09 IST" duration-ms="5" status="PASS">
+    <test started-at="2026-10-12T15:08:35 IST" name="Default test" finished-at="2026-10-12T15:08:42 IST" duration-ms="6479">
+      <class name="ecom.bitm.SwagLabsCheckOut.CheckOutNegativeTest">
+        <test-method is-config="true" signature="bS()[pri:0, instance:ecom.bitm.SwagLabsCheckOut.CheckOutNegativeTest@3270d194]" started-at="2026-10-12T15:08:35 IST" name="bS" finished-at="2026-10-12T15:08:35 IST" duration-ms="7" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Open Database Connectivity]]>
             </line>
           </reporter-output>
         </test-method> <!-- bS -->
-        <test-method is-config="true" signature="bT()[pri:0, instance:ecom.bitm.SwagLabsCheckOut.Checkoutpage@73a1e9a9]" started-at="2026-10-10T21:59:09 IST" name="bT" finished-at="2026-10-10T21:59:09 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="bT()[pri:0, instance:ecom.bitm.SwagLabsCheckOut.CheckOutNegativeTest@3270d194]" started-at="2026-10-12T15:08:35 IST" name="bT" finished-at="2026-10-12T15:08:35 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[pre-condition]]>
             </line>
           </reporter-output>
         </test-method> <!-- bT -->
-        <test-method is-config="true" signature="bC(java.lang.String)[pri:0, instance:ecom.bitm.SwagLabsCheckOut.Checkoutpage@73a1e9a9]" started-at="2026-10-10T21:59:09 IST" name="bC" finished-at="2026-10-10T21:59:12 IST" duration-ms="2405" status="PASS">
+        <test-method is-config="true" signature="bC(java.lang.String)[pri:0, instance:ecom.bitm.SwagLabsCheckOut.CheckOutNegativeTest@3270d194]" started-at="2026-10-12T15:08:35 IST" name="bC" finished-at="2026-10-12T15:08:39 IST" duration-ms="3961" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,14 +68,14 @@
             </line>
           </reporter-output>
         </test-method> <!-- bC -->
-        <test-method is-config="true" signature="bM()[pri:0, instance:ecom.bitm.SwagLabsCheckOut.Checkoutpage@73a1e9a9]" started-at="2026-10-10T21:59:12 IST" name="bM" finished-at="2026-10-10T21:59:19 IST" duration-ms="6498" status="PASS">
+        <test-method is-config="true" signature="bM()[pri:0, instance:ecom.bitm.SwagLabsCheckOut.CheckOutNegativeTest@3270d194]" started-at="2026-10-12T15:08:40 IST" name="bM" finished-at="2026-10-12T15:08:41 IST" duration-ms="691" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Before Method]]>
             </line>
           </reporter-output>
         </test-method> <!-- bM -->
-        <test-method signature="verifyCheckoutSmoke(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ecom.bitm.SwagLabsCheckOut.Checkoutpage@73a1e9a9]" started-at="2026-10-10T21:59:19 IST" name="verifyCheckoutSmoke" data-provider="systemData" finished-at="2026-10-10T21:59:19 IST" duration-ms="353" status="PASS">
+        <test-method signature="verifyCheckoutTextFieldFN(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ecom.bitm.SwagLabsCheckOut.CheckOutNegativeTest@3270d194]" started-at="2026-10-12T15:08:41 IST" name="verifyCheckoutTextFieldFN" data-provider="readcheckoutdata" finished-at="2026-10-12T15:08:41 IST" duration-ms="620" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -92,27 +89,27 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[A]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Kavya]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[583101]]>
+                <![CDATA[]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Smoke test passed: Checkout page opened]]>
+              <![CDATA[PASS: First Name,Last Name , ZipCode validation verified]]>
             </line>
           </reporter-output>
-        </test-method> <!-- verifyCheckoutSmoke -->
-        <test-method is-config="true" signature="aM()[pri:0, instance:ecom.bitm.SwagLabsCheckOut.Checkoutpage@73a1e9a9]" started-at="2026-10-10T21:59:19 IST" name="aM" finished-at="2026-10-10T21:59:19 IST" duration-ms="159" status="PASS">
+        </test-method> <!-- verifyCheckoutTextFieldFN -->
+        <test-method is-config="true" signature="aM()[pri:0, instance:ecom.bitm.SwagLabsCheckOut.CheckOutNegativeTest@3270d194]" started-at="2026-10-12T15:08:41 IST" name="aM" finished-at="2026-10-12T15:08:42 IST" duration-ms="675" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[After Method]]>
@@ -122,28 +119,28 @@
             </line>
           </reporter-output>
         </test-method> <!-- aM -->
-        <test-method is-config="true" signature="aC()[pri:0, instance:ecom.bitm.SwagLabsCheckOut.Checkoutpage@73a1e9a9]" started-at="2026-10-10T21:59:19 IST" name="aC" finished-at="2026-10-10T21:59:19 IST" duration-ms="88" status="PASS">
+        <test-method is-config="true" signature="aC()[pri:0, instance:ecom.bitm.SwagLabsCheckOut.CheckOutNegativeTest@3270d194]" started-at="2026-10-12T15:08:42 IST" name="aC" finished-at="2026-10-12T15:08:42 IST" duration-ms="92" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Close Browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- aC -->
-        <test-method is-config="true" signature="aT()[pri:0, instance:ecom.bitm.SwagLabsCheckOut.Checkoutpage@73a1e9a9]" started-at="2026-10-10T21:59:19 IST" name="aT" finished-at="2026-10-10T21:59:19 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="aT()[pri:0, instance:ecom.bitm.SwagLabsCheckOut.CheckOutNegativeTest@3270d194]" started-at="2026-10-12T15:08:42 IST" name="aT" finished-at="2026-10-12T15:08:42 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[post-condition]]>
             </line>
           </reporter-output>
         </test-method> <!-- aT -->
-        <test-method is-config="true" signature="aS()[pri:0, instance:ecom.bitm.SwagLabsCheckOut.Checkoutpage@73a1e9a9]" started-at="2026-10-10T21:59:19 IST" name="aS" finished-at="2026-10-10T21:59:19 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="aS()[pri:0, instance:ecom.bitm.SwagLabsCheckOut.CheckOutNegativeTest@3270d194]" started-at="2026-10-12T15:08:42 IST" name="aS" finished-at="2026-10-12T15:08:42 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Close - DataBase Connectivity]]>
             </line>
           </reporter-output>
         </test-method> <!-- aS -->
-      </class> <!-- ecom.bitm.SwagLabsCheckOut.Checkoutpage -->
-    </test> <!-- Test(failed) -->
-  </suite> <!-- Failed suite [Suite] -->
+      </class> <!-- ecom.bitm.SwagLabsCheckOut.CheckOutNegativeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

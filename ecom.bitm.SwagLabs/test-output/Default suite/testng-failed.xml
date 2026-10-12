@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ecom.bitm.SwagLabsCart.CartpageNegativeTest">
+      <class name="ecom.bitm.SwagLabsHamBurger.HamburgerTest">
         <methods>
-          <include name="verifyEmptyCartDoesNotShowProduct" invocation-numbers="3 4"/>
           <include name="aT"/>
           <include name="bC"/>
           <include name="bS"/>
           <include name="aM"/>
+          <include name="verifyHamBurgerMenu" invocation-numbers="0 1 2"/>
           <include name="aC"/>
           <include name="bT"/>
           <include name="aS"/>
           <include name="bM"/>
         </methods>
-      </class> <!-- ecom.bitm.SwagLabsCart.CartpageNegativeTest -->
+      </class> <!-- ecom.bitm.SwagLabsHamBurger.HamburgerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
