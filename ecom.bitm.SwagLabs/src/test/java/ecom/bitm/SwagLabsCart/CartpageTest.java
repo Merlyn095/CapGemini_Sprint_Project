@@ -83,6 +83,7 @@ public class CartpageTest extends BaseClass {
 		        cart.verifyBackpackDisplayed(),
 		        "Backpack is not displayed in Cart"
 		);		Reporter.log("Product is in  cart  Page",true);
+		cart.getRemove();
 		cart.clickCheckout();
 		Assert.assertEquals(driver.getCurrentUrl().contains("checkout-step-one"),true);
 		Reporter.log("CheckOut",true);

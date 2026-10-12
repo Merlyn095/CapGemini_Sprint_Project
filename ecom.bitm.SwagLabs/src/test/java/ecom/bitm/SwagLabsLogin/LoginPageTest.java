@@ -206,6 +206,7 @@ public class LoginPageTest extends BaseClass {
         SwagLabsCartpage cart = new SwagLabsCartpage(driver);
 
         Assert.assertTrue(cart.verifyBackpackDisplayed(),"Backpack is not displayed in Cart");
+        cart.getRemove();
 
         cart.clickCheckout();
 

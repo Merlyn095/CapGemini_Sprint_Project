@@ -49,20 +49,20 @@ public class SwagLabsHamburger {
 	    wait.until(ExpectedConditions.visibilityOf(menu));
 	    wait.until(ExpectedConditions.elementToBeClickable(menu));
 	    menu.click();
-	    wait.until(ExpectedConditions.visibilityOf(allItem));
+	    wait.until(ExpectedConditions.visibilityOf(restButton));
 	   
 			 
 	}
 	
 
 	public void getRestButton() {
-		
+		wait.until(ExpectedConditions.elementToBeClickable(restButton));
 		restButton.click();
 	}
 	
 
 	public void getLogout() {
-		
+		wait.until(ExpectedConditions.elementToBeClickable(logoutButton));
 		logoutButton.click();
 	}
 
@@ -75,6 +75,7 @@ public class SwagLabsHamburger {
 	}
 
 	public WebElement verifyLogout() {
+		
 		return  logoutButton;
 	}
 	
